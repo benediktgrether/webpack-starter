@@ -1,0 +1,63 @@
+@import "../configuration/root";
+
+.button__wrapper {
+	display: flex;
+
+	&.left {
+		justify-content: flex-start;
+	}
+
+	&.center {
+		justify-content: center;
+	}
+
+	&.right {
+		justify-content: flex-end;
+	}
+}
+
+.btn-primary-hover {
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		background-color: transparent;
+		border-color: $color-primary;
+		color: $color-primary;
+
+	}
+
+}
+
+.btn-secondary-hover {
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		background-color: transparent;
+		border-color: $color-secondary;
+		color: $color-secondary;
+	}
+}
+
+.btn-tertiary-hover {
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		background-color: transparent;
+		border-color: $color-tertiary;
+		color: $color-primary;
+	}
+}
+
+.btn-tertiary-primary-hover {
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		background-color: $color-primary;
+		border-color: $color-primary;
+		color: $color-white;
+	}
+}

@@ -1,0 +1,21 @@
+$color-primary: #002A53;
+$color-secondary: #FFE000;
+$color-gray-light: #CCCCCC;
+$color-gray-dark: #707070;
+$color-tertiary: #F5F5F5;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-cta: $color-primary;
+$color-text: $color-black;
+
+$theme-colors: (
+    "primary": $color-primary,
+    "secondary": $color-secondary,
+    "tertiary": $color-tertiary,
+    "gray-light": $color-gray-light,
+    "gray-dark": $color-gray-dark,
+    "white": $color-white,
+    "black": $color-black,
+    "cta": $color-cta,
+    "text": $color-text,
+);

@@ -1,0 +1,29 @@
+// https: //getbootstrap.com/docs/5.3/utilities/api/#using-the-api
+// https: //www.codeply.com/p/BNnGzvQBha@import "bootstrap/scss/functions";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/mixins"; // Import mixins before utilities
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/utilities";
+@import "../configuration/variables";
+
+$utilities: map-merge($utilities,
+        ("width": map-merge(map-get($utilities, "width"),
+                (values: map-merge(map-get(map-get($utilities, "width"), "values"),
+                        $sizing,
+                    ),
+                ),
+            ),
+        ));
+
+$utilities: map-merge($utilities,
+        ("height": map-merge(map-get($utilities, "height"),
+                (values: map-merge(map-get(map-get($utilities, "height"), "values"),
+                        $sizing,
+                    ),
+                ),
+            ),
+        ));
+
+@import "bootstrap/scss/utilities/api";
